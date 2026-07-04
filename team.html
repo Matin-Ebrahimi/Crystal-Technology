@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Team | Crystal Tech Services</title>
+<meta name="description" content="Meet the leadership team behind Crystal Tech Services, and verify employee ID cards with IDF.">
+<link rel="icon" href="assets/images/logo-icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
+      <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Team</div>
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap: var(--space-3);">
+        <div>
+          <h1>The people behind Crystal Tech</h1>
+          <p class="hero-lead mt-0">A leadership team that pairs technical depth with hands-on delivery across IT, software, and security.</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-idf-open>IDF · Verify Employee ID</button>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="grid-3">
+        <div class="card team-card" style="flex-direction:column;">
+          <div class="avatar">AQ</div>
+          <h3 style="margin-top: var(--space-2);">Ahmad Qasim Zolal</h3>
+          <span class="role-tag">General Manager · Cybersecurity Specialist</span>
+          <p style="margin-bottom:0;">Leads the company's direction and security practice, bringing a specialist focus on protecting the systems and data our clients depend on.</p>
+        </div>
+        <div class="card team-card" style="flex-direction:column;">
+          <div class="avatar">AM</div>
+          <h3 style="margin-top: var(--space-2);">Abdul Matin Ebrahimi</h3>
+          <span class="role-tag">Director · IT Expert</span>
+          <p style="margin-bottom:0;">Oversees technology delivery with more than six years of experience spanning IT infrastructure, systems, and client solutions.</p>
+        </div>
+        <div class="card team-card" style="flex-direction:column;">
+          <div class="avatar">RA</div>
+          <h3 style="margin-top: var(--space-2);">Ramin Afzali</h3>
+          <span class="role-tag">Senior Software Developer</span>
+          <p style="margin-bottom:0;">Drives software and application development with over six years of experience building and shipping custom digital products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--grey-lighter);" class="text-center">
+    <div class="container">
+      <h2>Employee ID Verification</h2>
+      <p class="section-intro center">Use the IDF tool to confirm an employee's name, position, and years of experience by ID number.</p>
+      <button type="button" class="btn btn-primary" data-idf-open>IDF · Verify Employee ID</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
+          <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
+        </a>
+        <p class="footer-tagline">Simplifying Complexity — Where creativity meets technology. Established 2020, Herat, Afghanistan, working worldwide.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Leadership Team</a></li>
+          <li><a href="industries.html">Industries We Serve</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#digital-solutions">Digital Solutions</a></li>
+          <li><a href="services.html#infrastructure-cloud">Infrastructure &amp; Cloud</a></li>
+          <li><a href="services.html#security-optimization">Security &amp; Optimization</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@crystal-tech.org">info@crystal-tech.org</a></li>
+          <li><a href="tel:+93799805357">+93 799 80 53 57</a></li>
+          <li>Herat, Afghanistan · Working Worldwide</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Crystal Tech Services. Established 2020.</div>
+      <div>crystal-tech.org</div>
+    </div>
+  </div>
+</footer>
+
+<!-- IDF: Employee ID Verification Modal -->
+<div class="modal-overlay" data-idf-overlay>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="idf-title">
+    <button type="button" class="modal-close" data-idf-close aria-label="Close">&times;</button>
+    <div class="modal-eyebrow">IDF</div>
+    <h3 id="idf-title" class="mt-0">Employee ID Verification</h3>
+    <p style="color: var(--grey-dark); font-size: 14px;">Enter the employee ID number to view their name, position, and years of experience.</p>
+    <form data-idf-form>
+      <label for="idf-input">Employee ID Number</label>
+      <input type="text" id="idf-input" data-idf-input placeholder="e.g. CTS-1001" autocomplete="off" required>
+      <button type="submit" class="btn btn-primary" style="margin-top: var(--space-2); width:100%;">Verify</button>
+    </form>
+    <div class="idf-result" data-idf-result></div>
+    <p style="color: var(--grey); font-size: 12px; margin-top: var(--space-3); margin-bottom:0;">Demo directory: CTS-1001, CTS-1002, CTS-1003. Replace with live HR data before production use.</p>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
