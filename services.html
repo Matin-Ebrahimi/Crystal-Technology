@@ -1,226 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Crystal Tech Services</title>
-<meta name="description" content="Digital Solutions, Infrastructure & Cloud, and Security & Optimization — three connected practices from Crystal Tech Services.">
-<link rel="icon" href="assets/images/logo-icon.png" type="image/png">
+<title>Services — Crystal Tech Services</title>
+<meta name="description" content="Three departments, one standard of craft: Web Design & Development, Infrastructure & Hosting, and Cloud & IT Consulting.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
 
-<header class="site-header">
-  <div class="container nav-row">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
-      <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-    </div>
-  </div>
-</header>
+<header id="site-header" class="site-header"></header>
 
-<main>
-
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
-      <h1>Our Services</h1>
-      <p class="hero-lead mt-0">Three connected practices that take an organization from first impression to secure, scalable operation.</p>
-    </div>
-  </div>
-
-  <!-- Digital Solutions -->
-  <section id="digital-solutions">
-    <div class="container">
-      <span class="section-tag">Department 01</span>
-      <h2>Digital Solutions</h2>
-      <p class="section-intro">The products your customers experience — designed to be clear, engaging, and built to perform.</p>
-
-      <h4>Web &amp; Application Development</h4>
-      <div class="grid-2" style="margin-bottom: var(--space-4);">
-        <ul class="check-list">
-          <li>Web Design &amp; Development</li>
-          <li>Custom Web Applications</li>
-        </ul>
-        <ul class="check-list">
-          <li>E-Commerce Development</li>
-          <li>Software Development</li>
-        </ul>
-      </div>
-
-      <h4>Design</h4>
-      <ul class="check-list" style="max-width: 480px;">
-        <li>UI/UX Design</li>
-      </ul>
-
-      <blockquote class="quote-block" style="margin-top: var(--space-4);">Every engagement is scoped to your goals — delivered with a design-led, security-conscious approach.</blockquote>
+<main id="main">
+  <section class="services-hero">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="servicesPage.eyebrow" data-reveal>Services</span>
+      <h1 data-reveal data-i18n="servicesPage.heading">Three departments. One standard of craft.</h1>
+      <p class="lead" data-reveal data-i18n="servicesPage.lead">From your first pixel to your last server log — we design, build, host, and advise on the systems that carry your organization forward.</p>
     </div>
   </section>
 
-  <!-- Infrastructure & Cloud -->
-  <section id="infrastructure-cloud" style="background: var(--grey-lighter);">
-    <div class="container">
-      <span class="section-tag">Department 02</span>
-      <h2>Infrastructure &amp; Cloud</h2>
-      <p class="section-intro">The dependable foundation your organization runs on — planned, provisioned, and optimized with care.</p>
-
-      <h4>Hosting &amp; Foundations</h4>
-      <div class="grid-2" style="margin-bottom: var(--space-4);">
-        <ul class="check-list">
-          <li>Hosting &amp; Domain Services</li>
-        </ul>
-        <ul class="check-list">
-          <li>Business Email Setup</li>
-        </ul>
-      </div>
-
-      <h4>Cloud &amp; IT Consulting</h4>
-      <div class="grid-2">
-        <ul class="check-list">
-          <li>Cloud Solution Advisory</li>
-          <li>IT Infrastructure Assessment</li>
-          <li>Digital Transformation Advisory</li>
-        </ul>
-        <ul class="check-list">
-          <li>Hosting &amp; Domain Consultation</li>
-          <li>Cloud Migration Planning</li>
-        </ul>
-      </div>
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="dept-grid" id="dept-grid"></div>
     </div>
   </section>
 
-  <!-- Security & Optimization -->
-  <section id="security-optimization">
-    <div class="container">
-      <span class="section-tag">Department 03</span>
-      <h2>Security &amp; Optimization</h2>
-      <p class="section-intro">The protection that keeps you resilient — assessing, hardening, and preparing your systems for the unexpected.</p>
-
-      <h4>Assessment &amp; Audit</h4>
-      <div class="grid-2" style="margin-bottom: var(--space-4);">
-        <ul class="check-list">
-          <li>Website Assessment &amp; Audit</li>
-          <li>CMS Security Review</li>
-        </ul>
-        <ul class="check-list">
-          <li>Website Security Assessment</li>
-        </ul>
-      </div>
-
-      <h4>Cybersecurity Consulting</h4>
-      <div class="grid-2">
-        <ul class="check-list">
-          <li>Security Best Practices</li>
-          <li>Security Recommendations</li>
-        </ul>
-        <ul class="check-list">
-          <li>Website Hardening</li>
-          <li>Backup &amp; Recovery Planning</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Working approach -->
-  <section class="section-dark">
-    <div class="container">
-      <span class="section-tag">Our working approach</span>
-      <h2>How we work with clients</h2>
-      <p class="section-intro">A clear, collaborative process — from understanding your goals to supporting what we build together.</p>
-      <div class="grid-4" style="margin-top: var(--space-5);">
-        <div class="card" style="background: rgba(255,255,255,0.04); border-color: var(--grey-dark);">
-          <div class="icon-badge" style="background: var(--primary); color: var(--white);">01</div>
-          <h4 style="color:var(--white);">Listen &amp; Understand</h4>
-          <p style="color:var(--grey-light); margin-bottom:0;">We begin with your goals, constraints, and context — asking questions before proposing answers.</p>
-        </div>
-        <div class="card" style="background: rgba(255,255,255,0.04); border-color: var(--grey-dark);">
-          <div class="icon-badge" style="background: var(--primary); color: var(--white);">02</div>
-          <h4 style="color:var(--white);">Plan &amp; Advise</h4>
-          <p style="color:var(--grey-light); margin-bottom:0;">We shape a clear plan and offer honest, practical advice, so decisions are made with full understanding.</p>
-        </div>
-        <div class="card" style="background: rgba(255,255,255,0.04); border-color: var(--grey-dark);">
-          <div class="icon-badge" style="background: var(--primary); color: var(--white);">03</div>
-          <h4 style="color:var(--white);">Design &amp; Build</h4>
-          <p style="color:var(--grey-light); margin-bottom:0;">We deliver with a design-led, engineering-sound approach — usable, secure, and built to last.</p>
-        </div>
-        <div class="card" style="background: rgba(255,255,255,0.04); border-color: var(--grey-dark);">
-          <div class="icon-badge" style="background: var(--primary); color: var(--white);">04</div>
-          <h4 style="color:var(--white);">Optimize &amp; Support</h4>
-          <p style="color:var(--grey-light); margin-bottom:0;">We assess, harden, and refine — helping your solution stay secure and perform as you grow.</p>
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-banner" data-reveal>
+        <h2 data-i18n="home.ctaHeading">Have a project in mind? Let's build something that performs.</h2>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaPrimary">Start a project</a>
+          <a href="work.html" class="btn btn-outline btn-lg" data-i18n="home.ctaSecondary">See our work</a>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="text-center">
-    <div class="container">
-      <h2>Not sure where to start?</h2>
-      <p class="section-intro center">Tell us about your goals and we'll help you scope the right engagement.</p>
-      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-    </div>
-  </section>
-
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
-          <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
-        </a>
-        <p class="footer-tagline">Simplifying Complexity — Where creativity meets technology. Established 2020, Herat, Afghanistan, working worldwide.</p>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Leadership Team</a></li>
-          <li><a href="industries.html">Industries We Serve</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#digital-solutions">Digital Solutions</a></li>
-          <li><a href="services.html#infrastructure-cloud">Infrastructure &amp; Cloud</a></li>
-          <li><a href="services.html#security-optimization">Security &amp; Optimization</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@crystal-tech.org">info@crystal-tech.org</a></li>
-          <li><a href="tel:+93799805357">+93 799 80 53 57</a></li>
-          <li>Herat, Afghanistan · Working Worldwide</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>&copy; 2026 Crystal Tech Services. Established 2020.</div>
-      <div>crystal-tech.org</div>
-    </div>
-  </div>
-</footer>
+<footer id="site-footer" class="site-footer"></footer>
 
-<script src="assets/js/main.js"></script>
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/services.js"></script>
 </body>
 </html>

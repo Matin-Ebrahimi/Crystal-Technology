@@ -1,165 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Crystal Tech Services</title>
-<meta name="description" content="Reach out to Crystal Tech Services to discuss your project, request a consultation, or learn more about how we can help.">
-<link rel="icon" href="assets/images/logo-icon.png" type="image/png">
+<title>Contact — Crystal Tech Services</title>
+<meta name="description" content="Tell us about your project. Crystal Tech Services is headquartered in Herat, Afghanistan, with representatives in Lithuania and Japan.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
 
-<header class="site-header">
-  <div class="container nav-row">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
-      <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+  <section class="page-header">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="contact.eyebrow" data-reveal>Contact</span>
+      <h1 data-reveal data-i18n="contact.heading">Let's talk</h1>
+      <p class="lead" data-reveal data-i18n="contact.lead">Tell us about your project — we'll get back to you within one business day.</p>
     </div>
-  </div>
-</header>
+  </section>
 
-<main>
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-form-card" data-reveal>
+          <form id="contact-form" novalidate>
+            <div id="form-success" class="badge approved" style="display:none; margin-bottom:20px; padding:10px 16px;"></div>
+            <div class="field-row">
+              <div class="field">
+                <label data-i18n="contact.formName">Name</label>
+                <input type="text" name="name" required data-i18n-placeholder="contact.formNamePh" placeholder="Your full name">
+              </div>
+              <div class="field">
+                <label data-i18n="contact.formEmail">Email</label>
+                <input type="email" name="email" required data-i18n-placeholder="contact.formEmailPh" placeholder="name@company.com">
+              </div>
+            </div>
+            <div class="field">
+              <label data-i18n="contact.formSubject">Subject</label>
+              <input type="text" name="subject" data-i18n-placeholder="contact.formSubjectPh" placeholder="What's this about?">
+            </div>
+            <div class="field">
+              <label data-i18n="contact.formMessage">Message</label>
+              <textarea name="message" rows="5" required data-i18n-placeholder="contact.formMessagePh" placeholder="Tell us about your project"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="contact.formSubmit">Send message</button>
+          </form>
+        </div>
 
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
-      <h1>Let's start a conversation</h1>
-      <p class="hero-lead mt-0">Reach out to discuss your project, request a consultation, or learn more about how we can help.</p>
-    </div>
-  </div>
+        <div data-reveal>
+          <div class="contact-info-item">
+            <div class="ico" id="ico-mail"></div>
+            <div><h5 data-i18n="contact.emailLabel">Email us</h5><p>hello@crystaltechservices.com</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ico" id="ico-clock"></div>
+            <div><h5 data-i18n="contact.hoursLabel">Working hours</h5><p data-i18n="contact.hours">Sat – Thu, 9:00 – 17:00 (UTC+4:30)</p></div>
+          </div>
 
-  <section>
-    <div class="container grid-2">
-      <div>
-        <div class="contact-grid" style="grid-template-columns: 1fr;">
-          <div class="card contact-card">
-            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            <div>
-              <h4 class="mt-0" style="margin-bottom:2px;">Phone</h4>
-              <p style="margin-bottom:0;"><a href="tel:+93799805357">+93 799 80 53 57</a><br><a href="tel:+93799606467">+93 799 60 64 67</a></p>
-            </div>
+          <h4 class="mono muted" style="font-size:11px; letter-spacing:.08em; text-transform:uppercase; margin:32px 0 16px;" data-i18n="contact.locationsHeading">Locations</h4>
+          <div class="location-card">
+            <h4 data-i18n="contact.hqCity">Herat, Afghanistan</h4>
+            <p data-i18n="contact.hqSub">Headquarters</p>
           </div>
-          <div class="card contact-card">
-            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div>
-              <h4 class="mt-0" style="margin-bottom:2px;">Email</h4>
-              <p style="margin-bottom:0;"><a href="mailto:info@crystal-tech.org">info@crystal-tech.org</a></p>
-            </div>
+          <div class="location-card">
+            <h4 data-i18n="contact.ltCity">Lithuania</h4>
+            <p data-i18n="contact.ltSub">Regional representative</p>
           </div>
-          <div class="card contact-card">
-            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-            <div>
-              <h4 class="mt-0" style="margin-bottom:2px;">Website</h4>
-              <p style="margin-bottom:0;"><a href="https://crystal-tech.org">crystal-tech.org</a></p>
-            </div>
-          </div>
-          <div class="card contact-card">
-            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div>
-              <h4 class="mt-0" style="margin-bottom:2px;">Location</h4>
-              <p style="margin-bottom:0;">Herat, Afghanistan<br>Working Worldwide</p>
-            </div>
+          <div class="location-card">
+            <h4 data-i18n="contact.jpCity">Japan</h4>
+            <p data-i18n="contact.jpSub">Regional representative</p>
           </div>
         </div>
       </div>
-
-      <div class="card">
-        <h3 class="mt-0">Send us a message</h3>
-        <p style="color: var(--grey-dark); font-size: 14px;">This form opens your email client with your message pre-filled to info@crystal-tech.org.</p>
-        <form class="contact-form" action="mailto:info@crystal-tech.org" method="post" enctype="text/plain">
-          <div class="form-row">
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="Name" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="Email" required>
-            </div>
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="Subject">
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </form>
-      </div>
     </div>
   </section>
-
-  <section class="section-dark text-center">
-    <div class="container">
-      <h2>Simplifying Complexity</h2>
-      <p class="section-intro center">Wherever your organization is headed, Crystal Tech Services is ready to help you get there — with technology that's secure, scalable, and built around the people who use it.</p>
-    </div>
-  </section>
-
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <img src="assets/images/logo-icon.png" alt="Crystal Tech Services">
-          <span class="brand-name">CRYSTAL TECH<span>SERVICES</span></span>
-        </a>
-        <p class="footer-tagline">Simplifying Complexity — Where creativity meets technology. Established 2020, Herat, Afghanistan, working worldwide.</p>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Leadership Team</a></li>
-          <li><a href="industries.html">Industries We Serve</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#digital-solutions">Digital Solutions</a></li>
-          <li><a href="services.html#infrastructure-cloud">Infrastructure &amp; Cloud</a></li>
-          <li><a href="services.html#security-optimization">Security &amp; Optimization</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@crystal-tech.org">info@crystal-tech.org</a></li>
-          <li><a href="tel:+93799805357">+93 799 80 53 57</a></li>
-          <li>Herat, Afghanistan · Working Worldwide</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>&copy; 2026 Crystal Tech Services. Established 2020.</div>
-      <div>crystal-tech.org</div>
-    </div>
-  </div>
-</footer>
+<footer id="site-footer" class="site-footer"></footer>
 
-<script src="assets/js/main.js"></script>
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>
