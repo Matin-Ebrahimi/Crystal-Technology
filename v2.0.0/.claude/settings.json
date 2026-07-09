@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /private/tmp/claude-501/-Users-laptopcity-Desktop-CTS-Website-V2/fe3c2ce0-cfcd-47fe-aed4-b487c1f2f879/scratchpad/verify_authchip.py)",
+      "Bash(python3 /private/tmp/claude-501/-Users-laptopcity-Desktop-CTS-Website-V2/fe3c2ce0-cfcd-47fe-aed4-b487c1f2f879/scratchpad/verify_grid.py)",
+      "Bash(python3 /private/tmp/claude-501/-Users-laptopcity-Desktop-CTS-Website-V2/fe3c2ce0-cfcd-47fe-aed4-b487c1f2f879/scratchpad/final_checks.py)",
+      "Bash(pkill -f \"http.server 8420\")"
+    ]
+  }
+}

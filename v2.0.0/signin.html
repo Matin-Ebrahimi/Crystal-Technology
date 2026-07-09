@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — Crystal Tech Services</title>
+<meta name="description" content="Sign in to your Crystal Tech Services account.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
+
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+  <div class="auth-wrap">
+    <div class="auth-card" data-reveal>
+      <a href="index.html" class="brand-mark"><img src="assets/horizontal-dark.png" alt="Crystal Tech Services" style="height:26px;"></a>
+      <h1 data-i18n="auth.signinHeading">Welcome back</h1>
+      <p class="sub" data-i18n="auth.signinSub">Sign in to your Crystal Tech account</p>
+
+      <form id="signin-form" novalidate>
+        <div class="field">
+          <label data-i18n="auth.emailLabel">Email</label>
+          <input type="email" name="email" required data-i18n-placeholder="auth.emailPh" placeholder="name@company.com">
+        </div>
+        <div class="field">
+          <label data-i18n="auth.passLabel">Password</label>
+          <input type="password" name="password" required data-i18n-placeholder="auth.passPh" placeholder="••••••••">
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
+          <label class="checkbox-row" style="align-items:center;">
+            <input type="checkbox" name="remember">
+            <span data-i18n="auth.rememberMe" style="font-size:13px;">Remember me</span>
+          </label>
+          <a href="#" class="mono" style="font-size:12.5px; color:var(--accent-lt);" data-i18n="auth.forgotPass">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="auth.signinBtn">Sign in</button>
+      </form>
+
+      <p class="auth-foot"><span data-i18n="auth.noAccount">Don't have an account?</span> <a href="signup.html" data-i18n="nav.signup">Sign up</a></p>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

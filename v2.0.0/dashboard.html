@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author dashboard — Crystal Tech Services</title>
+<meta name="description" content="Track the status of your submitted blog articles.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
+
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+  <section class="section-tight">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="contribute.dashHeading" data-reveal style="margin-bottom:14px; display:inline-flex;">Author dashboard</span>
+      <h1 data-reveal data-i18n="contribute.dashHeading" style="margin-bottom:8px;">Author dashboard</h1>
+      <p class="lead muted" data-reveal data-i18n="contribute.dashSub" style="font-size:16px; margin-bottom:40px;">Track the status of your submitted articles.</p>
+
+      <div class="dash-grid">
+        <aside class="dash-side" data-reveal>
+          <div class="avatar" id="dash-avatar"></div>
+          <div class="name" id="dash-name"></div>
+          <div class="email" id="dash-email"></div>
+          <nav>
+            <a href="dashboard.html" class="is-active" data-i18n="contribute.navOverview">Overview</a>
+            <a href="dashboard.html" data-i18n="contribute.navArticles">My articles</a>
+            <a href="submit-article.html" data-i18n="contribute.navNew">New article</a>
+          </nav>
+        </aside>
+
+        <div>
+          <div style="display:flex; justify-content:flex-end; margin-bottom:20px;">
+            <a href="submit-article.html" class="btn btn-primary" data-i18n="contribute.newArticleBtn">Write new article</a>
+          </div>
+          <div class="article-table" id="article-table"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

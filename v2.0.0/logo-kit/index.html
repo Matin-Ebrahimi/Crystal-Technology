@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Tech — Logo Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0E1A; --surface:#111827; --elevated:#1A2235;
+    --accent:#22D3EE; --accent-lt:#5EEAD4; --on-accent:#04211F;
+    --accent-soft:rgba(34,211,238,0.12); --accent-border:rgba(34,211,238,0.33);
+    --text:#F9FAFB; --muted:#94A3B8; --muted-2:#8595AD;
+    --border:rgba(255,255,255,0.06); --border-strong:rgba(255,255,255,0.12);
+    --danger:#F87171; --ok:#34D399;
+    --display:'Space Grotesk',sans-serif; --body:'Vazirmatn','Inter',sans-serif;
+    --mono:'Chivo Mono',monospace;
+    --radius:14px; --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);
+    font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.02em;line-height:1.2;margin:0;}
+  h1[dir]{} 
+  p{margin:0;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-lt);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .mono{font-family:var(--mono);}
+  .eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:2px;
+    text-transform:uppercase;color:var(--accent-lt);}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(10,14,26,0.8);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;}
+  .nav .brand{display:flex;align-items:center;gap:12px;}
+  .nav .brand img{height:30px;display:block;}
+  .nav .brand .nm{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:1px;}
+  .nav .tag{font-family:var(--mono);font-size:11px;color:var(--muted-2);letter-spacing:1px;}
+  @media(max-width:640px){.nav .tag{display:none;}}
+
+  /* hero */
+  .hero{padding:80px 0 56px;text-align:center;position:relative;overflow:hidden;}
+  .hero .glow{position:absolute;top:-40px;left:50%;transform:translateX(-50%);
+    width:640px;height:320px;border-radius:50%;
+    background:radial-gradient(circle,rgba(34,211,238,0.15),transparent 68%);filter:blur(30px);}
+  .hero h1{font-size:52px;margin:14px 0 12px;position:relative;}
+  .hero h1 .hl{color:var(--accent);}
+  .hero .lead{color:var(--muted);max-width:560px;margin:0 auto;font-size:17px;position:relative;}
+
+  section{padding:64px 0;border-top:1px solid var(--border);}
+  .sec-head{margin-bottom:36px;}
+  .sec-head h2{font-size:30px;margin-top:10px;}
+  .sec-head .sub{color:var(--muted);margin-top:8px;max-width:640px;}
+
+  /* asset showcase */
+  .assets{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;}
+  .asset{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+  .asset .canvas{padding:40px;display:grid;place-items:center;min-height:180px;}
+  .asset .canvas.on-dark{background:#0A0E1A;}
+  .asset .canvas.on-light{background:#F4F6FA;}
+  .asset .canvas.on-surface{background:var(--elevated);}
+  .asset .canvas img{max-width:100%;max-height:120px;display:block;}
+  .asset .canvas img.small{max-height:90px;}
+  .asset .foot{padding:16px 18px;border-top:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .asset .foot .info .t{font-size:14px;font-weight:600;color:var(--text);}
+  .asset .foot .info .d{font-family:var(--mono);font-size:11px;color:var(--muted-2);margin-top:2px;}
+  .dl{font-family:var(--mono);font-size:11px;letter-spacing:.5px;color:var(--accent-lt);
+    background:var(--accent-soft);border:1px solid var(--accent-border);
+    padding:7px 12px;border-radius:8px;white-space:nowrap;transition:all .15s ease;}
+  .dl:hover{background:var(--accent);color:var(--on-accent);}
+
+  /* color swatches */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;}
+  .sw{border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+  .sw .chip{height:78px;}
+  .sw .m{padding:10px 12px;background:var(--surface);}
+  .sw .m .l{font-size:13px;font-weight:500;}
+  .sw .m .h{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px;}
+
+  /* clear space / min size */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  @media(max-width:760px){.two{grid-template-columns:1fr;}}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;}
+  .panel h3{font-size:18px;margin-bottom:10px;}
+  .panel p{color:var(--muted);font-size:14px;}
+  .clearbox{margin-top:20px;background:#0A0E1A;border:1px dashed var(--accent-border);
+    border-radius:12px;padding:34px;display:grid;place-items:center;position:relative;}
+  .clearbox img{max-width:78%;max-height:96px;}
+  .minsize{margin-top:20px;display:flex;align-items:flex-end;gap:26px;flex-wrap:wrap;}
+  .minsize .item{text-align:center;}
+  .minsize .item .box{background:#0A0E1A;border:1px solid var(--border);border-radius:10px;
+    padding:16px;display:grid;place-items:center;}
+  .minsize .item img{display:block;}
+  .minsize .item .lab{font-family:var(--mono);font-size:11px;color:var(--muted-2);margin-top:8px;}
+
+  /* do / dont */
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media(max-width:760px){.rules{grid-template-columns:1fr;}}
+  .rulecol h3{font-size:16px;display:flex;align-items:center;gap:8px;margin-bottom:14px;}
+  .rulecol.do h3{color:var(--ok);}
+  .rulecol.dont h3{color:var(--danger);}
+  .rulelist{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+  .rulelist li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14px;
+    background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
+  .rulelist li .ic{flex:none;width:18px;height:18px;margin-top:3px;}
+  .do .ic{color:var(--ok);} .dont .ic{color:var(--danger);}
+
+  /* type + spec table */
+  .spec{width:100%;border-collapse:collapse;font-size:14px;}
+  .spec td,.spec th{text-align:right;padding:12px 14px;border-bottom:1px solid var(--border);}
+  .spec th{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted-2);font-weight:500;}
+  .spec td.k{color:var(--muted);}
+  .spec td .val{font-family:var(--mono);color:var(--accent-lt);}
+
+  footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;
+    font-family:var(--mono);font-size:12px;color:var(--muted-2);letter-spacing:1px;}
+
+  .note{background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:12px;
+    padding:16px 18px;color:var(--accent-lt);font-size:13.5px;margin-top:18px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="assets/horizontal-dark.png" alt="Crystal Tech">
+    </div>
+    <span class="tag">LOGO KIT · v1.0</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="glow"></div>
+  <div class="wrap">
+    <span class="eyebrow">Brand Assets</span>
+    <h1 dir="ltr">Crystal <span class="hl">Tech</span> — Logo Kit</h1>
+    <p class="lead">همه‌ی نسخه‌های رسمی لوگو، پالت رنگ، و قواعد استفاده در یک مرجع. برای دانلود هر فایل روی دکمه‌ی کنارش بزنید.</p>
+  </div>
+</div>
+
+<!-- ============ PRIMARY ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">01 — Primary Lockups</span>
+      <h2>نسخه‌ی افقی (اصلی)</h2>
+      <p class="sub">نسخه‌ی افقی، لوگوی اصلی برند است و برای هدر سایت، امضای ایمیل و سربرگ استفاده می‌شود. برای هر پس‌زمینه، نسخه‌ی درست را انتخاب کنید — این مهم‌ترین قاعده است.</p>
+    </div>
+    <div class="assets">
+      <div class="asset">
+        <div class="canvas on-dark"><img src="assets/horizontal-dark.png" alt="Horizontal on dark"></div>
+        <div class="foot">
+          <div class="info"><div class="t">افقی — روی پس‌زمینه تیره</div><div class="d">horizontal-dark.png</div></div>
+          <a class="dl" href="assets/horizontal-dark.png" download>دانلود</a>
+        </div>
+      </div>
+      <div class="asset">
+        <div class="canvas on-light"><img src="assets/horizontal-light.png" alt="Horizontal on light"></div>
+        <div class="foot">
+          <div class="info"><div class="t">افقی — روی پس‌زمینه روشن</div><div class="d">horizontal-light.png</div></div>
+          <a class="dl" href="assets/horizontal-light.png" download>دانلود</a>
+        </div>
+      </div>
+    </div>
+    <div class="note" dir="rtl">⚠️ نسخه‌ی تیره متنِ روشن دارد؛ روی پس‌زمینه‌ی سفید کلمه‌ی «Crystal» ناپدید می‌شود. حتماً روی زمینه‌ی روشن از نسخه‌ی <b>light</b> استفاده کنید.</div>
+  </div>
+</section>
+
+<!-- ============ VERTICAL ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">02 — Stacked Lockups</span>
+      <h2>نسخه‌ی عمودی</h2>
+      <p class="sub">وقتی فضای افقی کم است یا لوگو باید متمرکز و متقارن دیده شود — مثل کارت ویزیت، اسپلش، یا پروفایل.</p>
+    </div>
+    <div class="assets">
+      <div class="asset">
+        <div class="canvas on-dark"><img src="assets/vertical-dark.png" alt="Vertical on dark"></div>
+        <div class="foot">
+          <div class="info"><div class="t">عمودی — روی زمینه تیره</div><div class="d">vertical-dark.png</div></div>
+          <a class="dl" href="assets/vertical-dark.png" download>دانلود</a>
+        </div>
+      </div>
+      <div class="asset">
+        <div class="canvas on-light"><img src="assets/vertical-light.png" alt="Vertical on light"></div>
+        <div class="foot">
+          <div class="info"><div class="t">عمودی — روی زمینه روشن</div><div class="d">vertical-light.png</div></div>
+          <a class="dl" href="assets/vertical-light.png" download>دانلود</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ICON ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">03 — Symbol / Icon</span>
+      <h2>نماد تنها</h2>
+      <p class="sub">نماد «M» به‌تنهایی برای آواتار، فاوآیکون، واترمارک و جاهایی که برند از قبل شناخته‌شده است به کار می‌رود. زیر ۴۸ پیکسل فقط از نماد استفاده کنید، نه لوگوی کامل.</p>
+    </div>
+    <div class="assets">
+      <div class="asset">
+        <div class="canvas on-dark"><img class="small" src="assets/icon-teal.png" alt="Icon teal"></div>
+        <div class="foot"><div class="info"><div class="t">نماد — تیل (اصلی)</div><div class="d">icon-teal.png</div></div>
+          <a class="dl" href="assets/icon-teal.png" download>دانلود</a></div>
+      </div>
+      <div class="asset">
+        <div class="canvas on-dark"><img class="small" src="assets/icon-white.png" alt="Icon white"></div>
+        <div class="foot"><div class="info"><div class="t">نماد — سفید (تک‌رنگ)</div><div class="d">icon-white.png</div></div>
+          <a class="dl" href="assets/icon-white.png" download>دانلود</a></div>
+      </div>
+      <div class="asset">
+        <div class="canvas on-light"><img class="small" src="assets/icon-black.png" alt="Icon black"></div>
+        <div class="foot"><div class="info"><div class="t">نماد — مشکی (تک‌رنگ)</div><div class="d">icon-black.png</div></div>
+          <a class="dl" href="assets/icon-black.png" download>دانلود</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MONOCHROME ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">04 — Monochrome</span>
+      <h2>نسخه‌ی تک‌رنگ</h2>
+      <p class="sub">برای چاپ تک‌رنگ، فکس، حکاکی، یا زمانی که رنگ در دسترس نیست. تمام لوگو یک‌دست سفید یا مشکی می‌شود.</p>
+    </div>
+    <div class="assets">
+      <div class="asset">
+        <div class="canvas on-dark"><img src="assets/horizontal-mono-white.png" alt="Mono white"></div>
+        <div class="foot"><div class="info"><div class="t">تک‌رنگ سفید</div><div class="d">horizontal-mono-white.png</div></div>
+          <a class="dl" href="assets/horizontal-mono-white.png" download>دانلود</a></div>
+      </div>
+      <div class="asset">
+        <div class="canvas on-light"><img src="assets/horizontal-mono-black.png" alt="Mono black"></div>
+        <div class="foot"><div class="info"><div class="t">تک‌رنگ مشکی</div><div class="d">horizontal-mono-black.png</div></div>
+          <a class="dl" href="assets/horizontal-mono-black.png" download>دانلود</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAVICON ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">05 — Favicon & App Icon</span>
+      <h2>فاوآیکون و آیکون اپ</h2>
+      <p class="sub">نماد داخل کاشی گردگوشه‌ی تیره، برای تب مرورگر، آیکون موبایل و شبکه‌های اجتماعی. اندازه‌های آماده:</p>
+    </div>
+    <div class="minsize">
+      <div class="item"><div class="box"><img src="assets/favicon-512.png" width="96" alt="512"></div><div class="lab">512×512</div><a class="dl" href="assets/favicon-512.png" download style="display:inline-block;margin-top:8px;">دانلود</a></div>
+      <div class="item"><div class="box"><img src="assets/favicon-192.png" width="64" alt="192"></div><div class="lab">192×192</div><a class="dl" href="assets/favicon-192.png" download style="display:inline-block;margin-top:8px;">دانلود</a></div>
+      <div class="item"><div class="box"><img src="assets/favicon-64.png" width="48" alt="64"></div><div class="lab">64×64</div><a class="dl" href="assets/favicon-64.png" download style="display:inline-block;margin-top:8px;">دانلود</a></div>
+      <div class="item"><div class="box"><img src="assets/favicon-32.png" width="32" alt="32"></div><div class="lab">32×32</div><a class="dl" href="assets/favicon-32.png" download style="display:inline-block;margin-top:8px;">دانلود</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLORS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">06 — Color</span>
+      <h2>پالت رنگ برند</h2>
+      <p class="sub">پایه‌ی تیره‌ی لایه‌ای با یک لهجه‌ی تیل. تیل فقط روی ۵ تا ۱۰ درصد هر صفحه استفاده می‌شود — همان چیزی که برند را متمایز می‌کند.</p>
+    </div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#0A0E1A;"></div><div class="m"><div class="l">Base / پس‌زمینه</div><div class="h">#0A0E1A</div></div></div>
+      <div class="sw"><div class="chip" style="background:#111827;"></div><div class="m"><div class="l">Surface / کارت</div><div class="h">#111827</div></div></div>
+      <div class="sw"><div class="chip" style="background:#22D3EE;"></div><div class="m"><div class="l">Accent / تیل</div><div class="h">#22D3EE</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5EEAD4;"></div><div class="m"><div class="l">Accent Light</div><div class="h">#5EEAD4</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F9FAFB;"></div><div class="m"><div class="l">Text / متن</div><div class="h">#F9FAFB</div></div></div>
+      <div class="sw"><div class="chip" style="background:#94A3B8;"></div><div class="m"><div class="l">Muted</div><div class="h">#94A3B8</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLEAR SPACE + MIN SIZE ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">07 — Spacing & Size</span>
+      <h2>فضای امن و حداقل اندازه</h2>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>فضای امن (Clear Space)</h3>
+        <p>همیشه فضای خالی حداقل به اندازه‌ی ارتفاع نماد «M» را دور تا دور لوگو نگه دارید. هیچ متن، خط یا عنصر دیگری وارد این فضا نشود.</p>
+        <div class="clearbox"><img src="assets/horizontal-dark.png" alt="clear space"></div>
+      </div>
+      <div class="panel">
+        <h3>حداقل اندازه</h3>
+        <p>برای خوانا ماندن، لوگوی افقی را کوچک‌تر از ۱۲۰ پیکسل عرض (یا ۳۲ میلی‌متر در چاپ) استفاده نکنید. زیر این اندازه فقط از نماد استفاده کنید.</p>
+        <div class="minsize">
+          <div class="item"><div class="box"><img src="assets/horizontal-dark.png" width="180" alt="min web"></div><div class="lab">وب — حداقل ۱۲۰px</div></div>
+          <div class="item"><div class="box"><img src="assets/icon-teal.png" width="40" alt="icon min"></div><div class="lab">زیر ۴۸px → فقط نماد</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DO / DONT ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">08 — Usage Rules</span>
+      <h2>باید و نباید</h2>
+    </div>
+    <div class="rules">
+      <div class="rulecol do">
+        <h3>✓ درست</h3>
+        <ul class="rulelist">
+          <li><span class="ic">✓</span> روی زمینه‌ی تیره از نسخه‌ی dark و روی زمینه‌ی روشن از نسخه‌ی light استفاده کنید.</li>
+          <li><span class="ic">✓</span> فضای امن دور لوگو را همیشه حفظ کنید.</li>
+          <li><span class="ic">✓</span> رنگ تیل دقیق (#22D3EE) را حفظ کنید.</li>
+          <li><span class="ic">✓</span> برای فضاهای کوچک از نماد تنها استفاده کنید.</li>
+          <li><span class="ic">✓</span> نسبت ابعاد را همیشه قفل نگه دارید.</li>
+        </ul>
+      </div>
+      <div class="rulecol dont">
+        <h3>✕ نادرست</h3>
+        <ul class="rulelist">
+          <li><span class="ic">✕</span> لوگو را کج، کشیده یا فشرده نکنید.</li>
+          <li><span class="ic">✕</span> رنگ لوگو را به دلخواه (مثلاً آبی قدیمی) تغییر ندهید.</li>
+          <li><span class="ic">✕</span> نسخه‌ی تیره را روی زمینه‌ی روشن نگذارید (متن ناپدید می‌شود).</li>
+          <li><span class="ic">✕</span> سایه، طرح یا افکت اضافه به لوگو نزنید.</li>
+          <li><span class="ic">✕</span> فونت یا فاصله‌ی حروف را دستکاری نکنید.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPEC ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">09 — Specs</span>
+      <h2>مشخصات فنی</h2>
+    </div>
+    <div class="panel">
+      <table class="spec">
+        <tr><th>مورد</th><th>مقدار</th></tr>
+        <tr><td class="k">فونت لوگو (Wordmark)</td><td><span class="val">Poppins — Bold + Light</span></td></tr>
+        <tr><td class="k">فونت تیتر سایت (Display)</td><td><span class="val">Space Grotesk — 700</span></td></tr>
+        <tr><td class="k">فونت متن (Body)</td><td><span class="val">Inter — 400</span></td></tr>
+        <tr><td class="k">فونت داده/لیبل (Mono)</td><td><span class="val">Chivo Mono — 400/500</span></td></tr>
+        <tr><td class="k">رنگ اصلی (Accent)</td><td><span class="val">#22D3EE</span></td></tr>
+        <tr><td class="k">رنگ نماد در نسخه اصلی</td><td><span class="val">#22D3EE → #5EEAD4</span></td></tr>
+        <tr><td class="k">فرمت فایل‌ها</td><td><span class="val">PNG (پس‌زمینه شفاف)</span></td></tr>
+      </table>
+      <div class="note" dir="rtl">نکته: کلمه‌ی «Crystal» با وزن Bold و «Tech» با وزن Light و رنگ تیل نوشته می‌شود؛ این کنتراست، امضای تایپوگرافیک برند است. اگر بعداً به نسخه‌ی برداری (SVG) نیاز داشتید، همان فونت Space Grotesk راهنما را می‌توان جایگزین کرد تا با کل سایت یک‌دست شود.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  CRYSTAL TECH · LOGO KIT v1.0 · TECHNOLOGY · SECURITY
+</footer>
+
+</body>
+</html>

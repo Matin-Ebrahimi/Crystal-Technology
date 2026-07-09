@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Tech Services — Where Creativity Meets Technology</title>
+<meta name="description" content="Crystal Tech Services designs and builds websites, software, and cloud infrastructure — a design-led technology studio serving businesses, NGOs, and startups worldwide.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
+
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow" data-i18n="home.eyebrow">Where creativity meets technology</span>
+          <h1>
+            <span data-i18n="home.headlinePre">Design that</span>
+            <span class="grad-text" data-i18n="home.headlineAccent">performs.</span><br>
+            <span class="light-weight" data-i18n="home.headlinePost">Technology that lasts.</span>
+          </h1>
+          <p class="lead" data-i18n="home.lead">From creative branding to full-scale digital transformation, we help businesses, NGOs, and startups build secure, scalable digital products — beautifully.</p>
+          <div class="cta-row">
+            <a href="work.html" class="btn btn-primary btn-lg arrow"><span data-i18n="common.seeWork">See our work</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="services.html" class="btn btn-glass btn-lg" data-i18n="common.ourServices">Our services</a>
+          </div>
+        </div>
+        <div class="hero-orb-wrap" aria-hidden="true">
+          <div class="hero-orb-halo"></div>
+          <div class="hero-chip c1 chip"><span class="dot"></span><span data-i18n="home.chip1">crafted since 2020</span></div>
+          <div class="hero-orb"><img src="assets/icon-teal.png" alt=""></div>
+          <div class="hero-chip c2 chip"><span class="dot"></span><span data-i18n="home.chip2">Herat → worldwide</span></div>
+        </div>
+      </div>
+
+      <div class="trust-row" data-reveal>
+        <div class="label" data-i18n="common.trustedBy">TRUSTED BY ORGANIZATIONS WORLDWIDE</div>
+        <div class="trust-names" id="trust-names"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXEC SUMMARY ============ -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="exec-summary">
+        <div data-reveal>
+          <span class="eyebrow" data-i18n="home.execEyebrow">01 — Who we are</span>
+          <h2 style="font-size:clamp(26px,3.2vw,36px); margin-top:14px;" data-i18n="home.execHeading">Simplifying complexity</h2>
+        </div>
+        <div class="lead-col" data-reveal>
+          <p data-i18n="home.execBody">Crystal Tech Services helps organizations move from idea to impact.</p>
+          <p class="hq mono" data-i18n="home.hq">Headquartered in Herat, Afghanistan. Working with clients worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="wrap">
+      <blockquote data-reveal data-i18n="home.statement">We build technology businesses can trust — and that people can actually use.</blockquote>
+    </div>
+  </section>
+
+  <!-- ============ DEPARTMENTS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow" data-i18n="home.deptEyebrow">02 — What we do</span>
+        <h2 data-i18n="home.deptHeading">Three departments, one standard</h2>
+        <p data-i18n="home.deptSub">Web design leads. Infrastructure keeps you running. Consulting keeps you moving forward.</p>
+      </div>
+      <div class="dept-grid" id="dept-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section-tight">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="home.statsEyebrow" style="margin-bottom:20px; display:inline-flex;">03 — By the numbers</span>
+      <div class="stats-strip" id="stats-strip" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow" data-i18n="home.testiEyebrow">04 — Client voices</span>
+        <h2 data-i18n="home.testiHeading">What our clients say</h2>
+      </div>
+      <div class="testi-grid" id="testi-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-banner" data-reveal>
+        <h2 data-i18n="home.ctaHeading">Have a project in mind? Let's build something that performs.</h2>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.ctaPrimary">Start a project</a>
+          <a href="work.html" class="btn btn-outline btn-lg" data-i18n="home.ctaSecondary">See our work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

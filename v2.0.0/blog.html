@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Crystal Tech Services</title>
+<meta name="description" content="News, technical tips, and insight on technology and business from the Crystal Tech Services team.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="ambient"></div>
+
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+  <section class="page-header">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="blog.eyebrow" data-reveal>Blog</span>
+      <h1 data-reveal data-i18n="blog.heading">News, tips &amp; insight</h1>
+      <p class="lead" data-reveal data-i18n="blog.lead">News, technical tips, and insight on technology and business — from the Crystal Tech team.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div id="featured-slot" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="blog-toolbar">
+        <div class="cat-filter" id="cat-filter"></div>
+        <div class="search-box">
+          <span id="search-ico"></span>
+          <input type="text" id="search-input" data-i18n-placeholder="common.searchPlaceholder" placeholder="Search articles…">
+        </div>
+      </div>
+      <div class="blog-grid" id="blog-grid"></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-banner" data-reveal>
+        <h2 data-i18n="blog.contributeCta">Want to write for us?</h2>
+        <p class="muted" style="margin-top:10px;" data-i18n="blog.contributeSub">Sign in to submit an article for review.</p>
+        <div class="cta-row" id="contribute-cta-row"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<!-- Contribution flow: modal 1 — publish prompt -->
+<div class="modal-overlay" id="modal-publish" data-modal>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-publish-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Close"></button>
+    <div class="modal-icon" id="modal-publish-icon"></div>
+    <h3 id="modal-publish-title" data-i18n="contribute.modalTitle">Would you like to publish an article on our blog?</h3>
+    <p data-i18n="contribute.modalBody">Share your knowledge with our community.</p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-primary btn-block" id="modal-publish-yes" data-i18n="contribute.yes">Yes, let's go</button>
+      <button type="button" class="btn btn-outline btn-block" data-modal-close data-i18n="contribute.notNow">Not now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Contribution flow: modal 2 — consent -->
+<div class="modal-overlay" id="modal-consent" data-modal>
+  <div class="modal-box wide" role="dialog" aria-modal="true" aria-labelledby="modal-consent-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Close"></button>
+    <div class="modal-icon" id="modal-consent-icon"></div>
+    <h3 id="modal-consent-title" data-i18n="contribute.consentTitle">Contributor agreement</h3>
+    <p data-i18n="contribute.consentBody">Before continuing, please read and accept our contribution terms.</p>
+    <div class="checkbox-row" style="margin-top:20px;">
+      <input type="checkbox" id="consent-checkbox">
+      <label for="consent-checkbox" data-i18n="contribute.consentCheck">I agree to the contribution terms</label>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-primary btn-block" id="modal-consent-continue" disabled data-i18n="contribute.continueBtn">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/strings.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/contribute.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

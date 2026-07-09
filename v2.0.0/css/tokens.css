@@ -1,0 +1,78 @@
+/* ========================================================================
+   CRYSTAL TECH SERVICES — DESIGN TOKENS
+   ======================================================================== */
+
+:root{
+  /* Backgrounds (layered dark) */
+  --bg:        #080B14;
+  --bg-2:      #0B0F1C;
+  --surface:   #0F1524;
+  --elevated:  #1A2235;
+
+  /* Glass (translucent) */
+  --glass:         rgba(255,255,255,0.04);
+  --glass-strong:  rgba(255,255,255,0.06);
+  --glass-border:  rgba(255,255,255,0.10);
+
+  /* Accent — teal, use sparingly (~5-10% of any screen) */
+  --accent:     #22D3EE;
+  --accent-lt:  #5EEAD4;
+  --on-accent:  #04211F;
+  --accent-soft: rgba(34,211,238,0.10);
+  --accent-soft-strong: rgba(34,211,238,0.16);
+
+  /* Text */
+  --text:    #FBFCFE;
+  --muted:   #9AA7BD;
+  --muted-2: #5C6880;
+
+  /* Borders */
+  --border:        rgba(255,255,255,0.07);
+  --border-strong: rgba(255,255,255,0.13);
+
+  /* Fonts */
+  --font-display: 'Space Grotesk', 'Vazirmatn', sans-serif;
+  --font-body:    'Inter', 'Vazirmatn', sans-serif;
+  --font-mono:    'Chivo Mono', 'Vazirmatn', monospace;
+  --font-fa:      'Vazirmatn', 'Space Grotesk', sans-serif;
+
+  /* Spacing scale */
+  --s1: 8px;  --s2: 16px; --s3: 24px; --s4: 32px;
+  --s5: 48px; --s6: 64px; --s7: 96px; --s8: 128px;
+
+  /* Radii */
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --maxw: 1240px;
+  --maxw-narrow: 840px;
+
+  /* Shadows */
+  --shadow-glass: 0 1px 1px rgba(255,255,255,0.06) inset, 0 8px 40px rgba(0,0,0,0.45);
+  --shadow-lift: 0 20px 60px rgba(0,0,0,0.5);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.18s;
+  --dur: 0.32s;
+  --dur-slow: 0.6s;
+
+  /* Logical direction helpers (flip via [dir=rtl]) */
+  --dir: 1;
+}
+
+html[dir="rtl"]{
+  --dir: -1;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
